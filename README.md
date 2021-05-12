@@ -46,7 +46,7 @@ npm run dev //成功啟動後，終端機會顯示：This server is running on h
 
 - http://localhost:3000/new //新增 Todo 頁面
 
-- http://localhost:3000//:id //顯示一筆 Todo
+- http://localhost:3000/:id //顯示一筆 Todo
 
 - http://localhost:3000 (post) //新增一筆 Todo
 
