@@ -52,10 +52,13 @@ npm run dev //成功啟動後，終端機會顯示：This server is running on h
 
 # 作業過程
 
-觀看https://expressjs.com/zh-tw/guide/using-middleware.html來學習middleware的概要，以及顯示使用URL和method的方法。
+- 觀看https://expressjs.com/zh-tw/guide/using-middleware.html
+  來學習 middleware 的概要，以及顯示使用 URL 和 method 的方法。
 
-找到一篇不錯的文章，可以更方便的顯示當地或著全球時區：https://noob.tw/js-timezone/，不需要用到在另外設定date的format ，真的相當方便！！
-在 server log 時，第二段都會跳出 Request URL: GET /favicon.ico |total tine: 4 ms，上網看了一下，因為網站都會需要有個預設的 ico 圖標，因此切換到不同路由時，進行方式都如下：
+- 找到一篇不錯的文章，可以更方便的顯示當地或著全球時區：https://noob.tw/js-timezone/
+  ，不需要用到在另外設定 date 的 format ，真的相當方便！！
 
-- 第一次回傳 localhost 所要到的路由 ex: http://localhost:3000/
-- 第二次回傳網站的 ico，且 url 都來自 http://localhost:3000/favicon.ico
+- 在 server log 時，第二段都會跳出 Request URL: GET /favicon.ico |total tine: 4 ms，上網看了一下，因為網站都會需要有個預設的 ico 圖標，因此切換到不同路由時，進行方式都如下：
+
+  - 第一次回傳 localhost 所要到的路由 ex: http://localhost:3000/
+  - 第二次回傳網站的 ico，且 url 都來自 http://localhost:3000/favicon.ico
