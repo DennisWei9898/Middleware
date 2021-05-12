@@ -1,6 +1,6 @@
 # Middleware
 
-Middleware debug 的小工具，檢查是否有
+Middleware debug 的小工具，檢查是否有成功連線，以及所花費的時間
 
 # Features：功能列表
 
