@@ -6,13 +6,14 @@ const port = 3000
 
 app.use(bodyParser.urlencoded({ extended: true }))
 
+// middleware的主要方法
 app.use((req, res, next) => {
   const reqTime = Date.now()
   const date = new Date().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' })
   res.on('finish', () => {
     const resTime = Date.now()
     const duration = resTime - reqTime
-    console.log(`Time: ${date} | Request URL: ${req.method} ${req.originalUrl} |total tine: ${duration}`)
+    console.log(`Time: ${date} | Request URL: ${req.method} ${req.originalUrl} |total tine: ${duration} ms`)
   })
 
   next()
